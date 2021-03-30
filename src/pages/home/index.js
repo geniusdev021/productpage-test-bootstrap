@@ -21,12 +21,12 @@ const HomePage = () => {
     <Layout>
       <Row className="page-title">
         <Col md="10">
-          <p>
+          <p className="page-title-text">
             20 OZ ARCTIC ZONE® TITAN THERMAL HP® COPPER BOTTLE
           </p>
         </Col>
         <Col>
-          <Image role="button" src="assets/24_hour_icon.png" onClick={handleShow} />
+          <Image className="float-right" role="button" src="assets/24_hour_icon.png" onClick={handleShow} />
         </Col>
       </Row>
 
@@ -42,8 +42,10 @@ const HomePage = () => {
                   <div className="title-cart">
                     <div className="number">1</div>
                     <div>
-                      <h4>ADD QUANTITY TO SELECTED PRODUCT</h4>
-                      <small>QUANTITY: (MIN: 12)</small>
+                      <h4>
+                        ADD QUANTITY TO SELECTED PRODUCT
+                        <span><small>  QUANTITY: (MIN: 12)</small></span>
+                      </h4>
                     </div>
                   </div>
                 </div>

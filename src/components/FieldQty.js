@@ -5,11 +5,11 @@ import { Button, FormControl, InputGroup } from 'react-bootstrap';
 const FieldQty = ({ qty, setQty }) => (
   <InputGroup>
     <InputGroup.Prepend>
-      <Button size="sm" variant="outline-secondary" onClick={() => setQty(qty - 12)} disabled={qty <= 0}>-</Button>
+      <Button size="sm" variant="outline-secondary" onClick={() => setQty(qty - 12)} disabled={qty <= 0}> - </Button>
     </InputGroup.Prepend>
-    <FormControl size="sm" type="number" aria-describedby="basic-addon1" value={qty} onChange={(e) => setQty(Number(e.target.value))} />
+    <FormControl className="text-center" size="sm" type="number" aria-describedby="basic-addon1" value={qty} onChange={(e) => setQty(Number(e.target.value))} />
     <InputGroup.Append>
-      <Button size="sm" variant="outline-secondary" onClick={() => setQty(qty + 12)}>+</Button>
+      <Button size="sm" variant="outline-secondary" onClick={() => setQty(qty + 12)}> + </Button>
     </InputGroup.Append>
   </InputGroup>
 );
